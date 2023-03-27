@@ -11,4 +11,6 @@ RUN R -e 'BiocManager::install("openCyto")' && \
     R -e 'BiocManager::install("flowDensity")' && \
     R -e 'library(flowDensity)' && \
     R -e 'BiocManager::install("flowClean")' && \
-    R -e 'library(flowClean)'
+    R -e 'library(flowClean)' && \
+    R -e 'remotes::install_github("RGLab/cytoqc")' && \
+    R -e 'library(cytoqc)'
